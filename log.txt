@@ -1,0 +1,6 @@
+INFO: Serveur démarré
+ERROR: Échec de connexion
+WARNING: Mémoire faible
+INFO: Requête traitée
+ERROR: Disque plein
+INFO: Arrêt du serveur

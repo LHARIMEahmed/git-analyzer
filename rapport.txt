@@ -1,0 +1,11 @@
+=== Rapport d'analyse ===
+
+Fichiers en double (par taille) :
+Taille 9 octets :
+  - test_folder\test_folder\file1.txt
+  - test_folder\test_folder\file2.txt
+
+Statistiques du fichier log :
+INFO: 3
+ERROR: 2
+WARNING: 1
