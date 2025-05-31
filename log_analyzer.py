@@ -2,6 +2,7 @@ import os
 import sys
 from collections import defaultdict, Counter
 
+
 def find_duplicates(directory):
     """Trouve les fichiers en double par taille dans un dossier."""
     size_to_files = defaultdict(list)
@@ -35,6 +36,10 @@ def analyze_log(log_file):
 def export_results(duplicates, log_stats, output_file):
     """Exporte les résultats dans un fichier rapport.txt."""
     with open(output_file, 'w') as f:
+        # Ajouter dans export_results, après l'ouverture du fichier
+        import colorama
+        colorama.init()
+        f.write(f"{colorama.Fore.GREEN}=== Rapport d'analyse ==={colorama.Style.RESET_ALL}\n")
         f.write("=== Rapport d'analyse ===\n\n")
         
         f.write("Fichiers en double (par taille) :\n")
